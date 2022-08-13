@@ -10,7 +10,7 @@
 
 <body>
   <!-- Header -->
-  <section id="header">
+  <header id="header">
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
@@ -18,36 +18,46 @@
             <h1><span>D</span>evanshi <span>G</span>andhi</h1>
           </a>
         </div>
-        <div class="nav-list">
+
+        <!-- <div class="nav-list">
           <div class="hamburger">
             <div class="bar"></div>
           </div>
           <ul>
             <li><a href="index.html" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
             <li><a href="about.html" data-after="About">About</a></li>
             <li><a href="contact.html" data-after="Contact">Contact</a></li>
           </ul>
-        </div>
+        </div> -->
+      </div>
+      <div class="navy">
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </header>
   <!-- End Header -->
+
 
 
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-
-      <div class="my-photo" style="padding-right: 20px;">
+      <div class="col-left">
+       <div class="my-photo" style="padding-right: 20px;">
         <img src="./photos/img1.JPG" style="width: 500px;" />
       </div>
-   
-
-      <div class="my-description" style="justify-content: flex-start;">
+      </div>
+       
+      <div class="col-right">
+       <div class="my-description" style="justify-content: flex-start;">
         <h1>Hello, <span></span></h1>
         <h1>Welcome<span></span></h1>
         <h1>to My Blog!! <span></span></h1>
+      </div>
       </div>
     </div>
 
@@ -60,16 +70,40 @@
   <section id="about">
     <div class="about container">
       <div class="col-left">
-        <div class="about-img" style="justify-content: flex-start">
+        <div class="about-img">
           <img src="./photos/img.JPG" alt="img" style="height: 600px;">
         </div>
       </div>
       <div class="col-right">
-        <h1 class="section-title" style="justify-content: flex-end;">About <span>me</span></h1>
+        <h1 class="section-title">About <span>me</span></h1>
         <h2>Software Engineer </h2>
         <p style="text-align:justify;">Hello, my name is Devanshi Gandhi. I was born in India. Currently, I’m a student at the Lambton College, Canada. I completed my bachelors in computer engineering. I have also created Application for my college project. I’m interested in expanding beyond my academic background in the field of developing mobile applications. It leads me to choose the course of Mobile Application Design and Development for my further studies in Canada. Mobile Applications are very useful nowadays in this digital world. It will be easy if you have an application for every work. People can easily manage everything by accessing applications. My goal is to create useful applications for better life. As a creative person, I have many great ideas for designs and I am also gaining some knowledge of development. 
           
          </p>
+         <table style="width:100%">
+          <thead>
+            <tr>
+                <th colspan="3"  style="text-align: center;">Education</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>School Name</th>
+            <th>Course Name</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Lambton College</td>
+            <td>Mobile Application Design $ Development</td>
+            <td>Jan 2022-Sep 2023</td>
+          </tr>
+          <tr>
+            <td>SAL Campus</td>
+            <td>Computer Engineering</td>
+            <td>Aug 2016-Sep 2020</td>
+          </tr>
+          </tbody>
+        </table>
       
       </div>
     </div>
@@ -84,10 +118,10 @@
       </div>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="icon"><img src="./photos/phone.png"/></div>
+          <div class="icon"><img src="./photos/phone.jpg"/></div>
           <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 437 260 2908</h2>
+            <h1>Github</h1>
+            <h2>@Devanshig29</h2>
             
           </div>
         </div>

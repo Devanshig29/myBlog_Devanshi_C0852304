@@ -12,6 +12,7 @@ html {
 a {
 	text-decoration: none;
 }
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -80,7 +81,7 @@ p {
 	height: auto;
 }
 #header .header {
-	min-height: 8vh;
+	min-height: 18vh;
 	background-color: palevioletred;
 	transition: 0.3s ease background-color;
 }
@@ -194,6 +195,36 @@ p {
 }
 #header .hamburger.active .bar::after {
 	top: 0;
+}
+.my-description{
+	display: none;
+}
+.navy{
+	position:relative;
+	top:100px;
+	left:-25%;
+	font-size: 1.2em;
+	width:100vw;
+	
+
+	margin: 10px auto 100px auto;
+	z-index: 2;
+}
+.navy ul{
+	display: flex;
+}
+.navy ul li{
+	list-style-type: none;
+	color:white;
+	width:25%;
+	
+}
+.navy ul li a{
+	color:white;
+	
+}
+.navy ul li a:hover{
+	color:  rgb(199, 227, 20);
 }
 /* End Header section */
 
@@ -407,10 +438,7 @@ p {
 	padding: 100px 20px;
 
 }
-#about .col-left {
-	width: 250px;
-	height: 360px;
-}
+
 #about .col-right {
 	width: 100%;
 }
@@ -418,6 +446,7 @@ p {
 	font-size: 1.8rem;
 	font-weight: 500;
 	font: bolder;
+	color: palevioletred;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
@@ -431,7 +460,28 @@ p {
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+#about .col-right table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+#about .col-right th{
+   color: palevioletred;
+}
+
+#about .col-right th,td{
+	padding: 14px;
+	font-size: 1.6em;
+  }
+#about .col-right tr {
+	border: 5px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+ 
 #about .col-left .about-img {
+	
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -453,6 +503,7 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
+	margin-bottom: 20px;
 }
 #contact .contact-items {
 	/* max-width: 400px; */
@@ -574,6 +625,22 @@ p {
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
+	.navy{
+		position:relative;
+		top:50px;
+		left: 0%;
+		right:20px;
+		font-size: 1.8em;
+		width:50vw;
+		
+
+	}
+	.navy ul li{
+
+		width:33%;
+		
+	}
+
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
